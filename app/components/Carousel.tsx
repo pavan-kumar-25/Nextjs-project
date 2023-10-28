@@ -1,6 +1,10 @@
+'use client';
 import React from 'react'
+import Login from './Login'
+import { useRouter } from 'next/router'
 
 const Carousel = () => {
+  const router = useRouter();
   return (
     <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
@@ -8,7 +12,7 @@ const Carousel = () => {
       <div className='p-5 text-white z-[2] mt-[-10rem]'>
         <h2 className='text-5xl font-bold'>Start of new beginning</h2>
         <p className='py-5 text-xl'>Love what you do and do what you love</p>
-        <button className='px-8 py-2 border'>Login</button>
+        <button className='px-8 py-2 border' onClick={() => router.push('/Login')}>Login</button>
       </div>
     </div>
   )
