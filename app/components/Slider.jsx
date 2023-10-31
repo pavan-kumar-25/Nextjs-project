@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
@@ -40,12 +40,12 @@ const Slider = ({ slides }) => {
                 size={50}
               />
               {index === current && (
-                <Image
+                <img
                   src={slide.image}
                   alt='/'
                   width='1440'
                   height='600'
-                  objectFit='cover'
+                  // objectFit='cover'
                 />
               )}
               <FaArrowCircleRight

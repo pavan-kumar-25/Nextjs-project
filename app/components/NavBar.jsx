@@ -36,7 +36,7 @@ const Navbar = () => {
             Captur
           </h1>
         </Link>
-        <ul style={{ color: `${textColor}` }} className='flex sm:hidden'>
+        <ul style={{ color: `${textColor}` }} className='hidden md:flex'>
           <li className='p-4'>
             <Link href='/'>Home</Link>
           </li>
@@ -52,7 +52,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='flex md:hidden z-10'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (

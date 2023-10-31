@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from './Login'
 import NavBar from './NavBar'
 import Footer from './Footer'
 import Carousel from './Carousel'
-// import Slider from './Slider'
-// import SliderData from './SliderData'
+// import Login from './Login'
+import Slider from './Slider'
+import {SliderData} from './SliderData'
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
      <NavBar/>
       {/* <Login /> */}
       <Carousel/>
-      {/* <Slider slides={SliderData} /> */}
+      <Slider slides={SliderData} />
       <Footer/>
     </>
   )
