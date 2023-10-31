@@ -44,7 +44,7 @@ const Navbar = () => {
             <Link href='/#gallery'>Gallery</Link>
           </li>
           <li className='p-4'>
-            <Link href='/work'>Work</Link>
+            <Link href='/'>Work</Link>
           </li>
           <li className='p-4'>
             <Link href='/contact'>Contact</Link>

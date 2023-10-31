@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from './NavBar'
+import NavBar from '../navbar/page'
 import Footer from './Footer'
 import Carousel from './Carousel'
 // import Login from './Login'
